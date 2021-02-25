@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://mockend.com/org/repo/users')
+    fetch('https://mockend.com/elliotregan/monsters-rolodex/users')
       .then((response) => response.json())
       .then((users) => this.setState({ monsters: users }));
   }
