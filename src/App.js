@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://mockend.com/org/repo/')
+    fetch('https://mockend.com/org/repo/users')
       .then((response) => response.json())
       .then((users) => this.setState({ monsters: users }));
   }
